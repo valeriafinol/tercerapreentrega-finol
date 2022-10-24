@@ -1,0 +1,12 @@
+#cart {
+    background-color: #B4CDE6;
+    width: 300px;
+    height: 100vh;
+    /* position: fixed; */
+    /* top: 0;
+    right: 0; */
+}
+
+#ingredientContainer {
+    margin: 2px;
+}
