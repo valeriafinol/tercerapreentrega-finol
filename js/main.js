@@ -21,7 +21,7 @@ function login() {
     return;
   /* Mediante esta condición: Si checkbox está checked, los datos se guardan en el localStorage 
 Si checkbox no está checked, los datos se guardan en sessionStorage */
-  } else if (email === usuarioGuardado || password === contraseniaGuardada) {
+  } else if (email === usuarioGuardado && password === contraseniaGuardada) {
     if (checkbox.checked) {
       localStorage.setItem("login", true);
     } else {

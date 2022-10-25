@@ -12,7 +12,7 @@ window.onload = function () {
   let localStorageGet = localStorage.getItem("login");
   let sessionStorageGet = sessionStorage.getItem("login");
 
-  if (!localStorageGet || !sessionStorageGet) {
+  if (!localStorageGet && !sessionStorageGet) {
     window.location.href = "../index.html";
   }else{
     fetch('../js/data/ingredients_list.json') // Mediante fetch se obtienen los datos de los ingredientes desde el archivo ingredients_list.json
