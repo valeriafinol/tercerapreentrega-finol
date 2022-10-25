@@ -1,12 +1,42 @@
-#cart {
-    background-color: #B4CDE6;
-    width: 300px;
-    height: 100vh;
-    /* position: fixed; */
-    /* top: 0;
-    right: 0; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
+body, html{
+    margin: 0;
+    padding: 0;
+}
+#cart {
+    background-color: #B4CDE6;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0; 
+}
+.selectedItem li{
+    background-color: whitesmoke;
+    list-style: none;
+    border-radius: 8px;
+    border: 2px solid rgba(112, 128, 144, 0.274);
+    text-align: center;
+    margin-top: 5px;
+}
+.ingredient{
+    margin-bottom: 0px;
+}
 #ingredientContainer {
-    margin: 2px;
+    width: 85%;
+}
+#searchButton{
+    display: none;
+}
+.is-visible{
+    display: inline-block !important;
+}
+.card{
+    width: 18rem;
+    margin: 3px;
 }
